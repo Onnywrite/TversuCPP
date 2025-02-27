@@ -4,6 +4,7 @@ project(TversuCPP)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
@@ -13,7 +14,7 @@ if (NOT COMMON_SOURCES)
     message(WARNING "No common .cpp files found in src/common")
 endif()
 
-set(PROJECTS)
+set(PROJECTS lab1_2025)
 
 foreach(proj ${PROJECTS})
     file(GLOB_RECURSE PROJ_SOURCES "src/${proj}/*.cpp")

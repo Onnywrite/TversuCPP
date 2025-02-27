@@ -12,4 +12,4 @@ T MagneticEnergyCalculator::CalculateMagneticEnergy(T inductance, T current) {
     return 0.5 * inductance * current * current;
 }
 
-#endif // MAGNETICENERGYCALCULATOR_HPP
+#endif  // MAGNETICENERGYCALCULATOR_HPP

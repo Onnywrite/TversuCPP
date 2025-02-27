@@ -1,0 +1,25 @@
+---
+Checks: "-*,cppcoreguidelines-avoid-goto,cppcoreguidelines-pro-type-const-cast, google-readability-casting, google-runtime-int, modernize-replace-random-shuffle, modernize-use-nullptr, readability-braces-around-statements, readability-container-size-empty, readability-redundant-control-flow, readability-redundant-string-init, readability-identifier-naming, google-build-using-namespace"
+WarningsAsErrors: "*"
+HeaderFileExtensions: [hpp]
+ImplementationFileExtensions: [c, cpp]
+CheckOptions:
+   readability-identifier-naming.NamespaceCase: lower_case
+   readability-identifier-naming.ClassCase: CamelCase
+   readability-identifier-naming.TypedefCase: CamelCase
+   readability-identifier-naming.TypeAliasCase: CamelCase
+   readability-identifier-naming.PrivateMemberPrefix: m_
+   readability-identifier-naming.StructCase: CamelCase
+   readability-identifier-naming.FunctionCase: CamelCase
+   readability-identifier-naming.VariableCase: camelBack
+   readability-identifier-naming.PrivateMemberCase: camelBack
+   readability-identifier-naming.ParameterCase: lower_case
+   readability-identifier-naming.GlobalConstantCase: CamelCase
+   readability-identifier-naming.StaticConstantCase: CamelCase
+   readability-identifier-naming.ConstexprVariableCase: CamelCase
+   google-runtime-int.TypeSuffix: _t
+   readability-identifier-naming.TypeTemplateParameterCase: CamelCase
+   readability-identifier-naming.TypeTemplateParameterIgnoredRegexp: ^expr-type$
+   readability-identifier-naming.FunctionIgnoredRegexp: ^(begin|end|(kdtree.*))$
+   readability-identifier-naming.TypeAliasIgnoredRegexp: ^(iterator_category|value_type|difference_type|pointer|reference|iterator_type|iterator_concept)$
+---
