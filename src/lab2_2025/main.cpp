@@ -13,6 +13,11 @@ int main() {
         auto p = InputHandler::GetPositiveNumber<double>("Введите число: ");
 
         double b = NaturalPow(X, 4) + log10(NaturalPow(p, 3));
+        if (b < 0) {
+            std::cerr << "Ошибка: b отрицательное, невозможно вычислить квадратный корень\n";
+            return 0;
+        }
+
         double a = log(abs(X));
         double y = NaturalPow(sin(a * X), 3) + sqrt(b) * cos(NaturalPow(X, 2));
 
