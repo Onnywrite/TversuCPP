@@ -32,7 +32,8 @@
 *.app
 
 # Build directories
-/build/
+/build/*
+!/build/.gitkeep
 /bin/
 /lib/
 
