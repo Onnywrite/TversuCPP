@@ -5,8 +5,8 @@
 
 int main() {
     try {
-        auto inductance = InputHandler::GetNumber<double>("Введите индуктивность L (Гн): ");
-        auto current = InputHandler::GetNumber<double>("Введите силу тока I (А): ");
+        auto inductance = InputHandler::GetPositiveNumber<double>("Введите индуктивность L (Гн): ");
+        auto current = InputHandler::GetPositiveNumber<double>("Введите силу тока I (А): ");
 
         auto magneticEnergy =
             MagneticEnergyCalculator::CalculateMagneticEnergy(inductance, current);
