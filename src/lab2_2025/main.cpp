@@ -10,7 +10,7 @@ const double X = 1.4;
 
 int main() {
     try {
-        auto p = InputHandler::GetNumber<double>("Введите число: ");
+        auto p = InputHandler::GetPositiveNumber<double>("Введите число: ");
 
         double b = NaturalPow(X, 4) + log10(NaturalPow(p, 3));
         double a = log(abs(X));
