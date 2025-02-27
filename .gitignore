@@ -30,3 +30,27 @@
 *.exe
 *.out
 *.app
+
+# Build directories
+/build/
+/bin/
+/lib/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# IDE specific files
+.idea/
+.vscode/
+*.sln
+*.vcxproj*
+*.user
+
+# Custom ignore patterns
+ignore-*
