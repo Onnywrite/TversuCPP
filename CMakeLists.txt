@@ -14,7 +14,7 @@ if (NOT COMMON_SOURCES)
     message(WARNING "No common .cpp files found in src/common")
 endif()
 
-set(PROJECTS lab1_2025 lab2_2025 lab3_2025)
+set(PROJECTS lab1_2025 lab2_2025 lab3_2025 lab4_2025)
 
 foreach(proj ${PROJECTS})
     file(GLOB_RECURSE PROJ_SOURCES "src/${proj}/*.cpp")
